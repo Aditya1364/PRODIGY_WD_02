@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;    
+  height: 100vh;
+}
+.main > h1 {
+  margin-bottom: 30px;
+  font-size: 50px;
+  color: #de1c1c;
+}
+.container {
+  background-color: #7ce2eb;
+  width: 600px; 
+  padding: 3.75em 0;
+  border-radius: 0.8em;
+  box-shadow: 0 1.97em 3.75em rgba(1, 23, 49, 0.2);
+}
+.timer-display {
+  position: relative;
+  width: 110%;
+  background-color: #1c1c1c;
+  left: -5%;
+  padding: 1em 0;
+  color: #f0f2ffbe;
+  font-size: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.3em;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+}
+.buttons {
+  width: 80%;
+  margin: 3.8em auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons button {
+  font-size: 1.12em;
+  background-color: #e0dbff;
+  color: #de1313;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.5em;
+  padding: 1em 1.5em;
+  cursor: pointer;
+  outline: none;
+}
+#start-timer {
+  background-color: #010a09;
+  color: #f0f9ff;
+}
+body {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/001/966/732/non_2x/abstract-futuristic-technology-background-with-digital-number-timer-concept-and-countdown-vector.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.stopwatch-app-title {
+  text-align: center;
+  font-size: 2.5em; 
+  font-weight: bold;
+  color: #faf9f9; 
+  padding: 1em; 
+  border-bottom: 1px solid #ccc; 
+}
+/* ... rest of your CSS code ... */
+
+.stopwatch-app-title {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+}
+
+.stopwatch-app-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #4CAF50; /* adjust the color as needed */
+  transform: translateY(-50%);
+}
